@@ -25,6 +25,12 @@ dependencies {
 
     implementation 'com.github.ben-manes.caffeine:caffeine'
 
+    compileOnly 'org.projectlombok:lombok'
+    compileOnly 'org.mapstruct:mapstruct:1.5.0.RC1'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.0.Beta1'
+
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
