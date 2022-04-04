@@ -15,7 +15,7 @@ WebSocket Token-Based Authentication
 Это может быть расширено за счет дополнительной проверки временного токена внешней аутентификации, например проверки того, что запрос на получение временного токена и запрос на установление рукопожатия WebSocket исходят от одного и того же IP-адреса.
 Кроме того, мы могли бы извлечь конечную точку HTTP с сервера WebSocket, используя внешний кеш.
 
-![websocket-auth-flow](websocket-auth-flow.png)
+![websocket-auth-flow](img/websocket-auth-flow.png)
 
 1. Запросы на аутентификацию отправляются в конечную точку HTTP /authenticate/token с токеном внутренней аутентификации, который безопасно передается в заголовке запроса.
    Сервер создает временный внешний токен аутентификации, сохраняет его в кэше аутентификации и возвращает клиенту.
@@ -26,9 +26,6 @@ WebSocket Token-Based Authentication
 Теперь клиент прошел аутентификацию, и теперь может осуществляться двунаправленная связь.
 
 * http://localhost:8080
-
-![Screenshot-01](screenshot_01.png)
-
-![Screenshot-02](screenshot_02.png)
-
-![Screenshot-03](screenshot_03.png)
+  ![Screenshot-01](img/screenshot_01.png)
+  ![Screenshot-02](img/screenshot_02.png)
+  ![Screenshot-03](img/screenshot_03.png)
