@@ -57,4 +57,20 @@ stompClient.send("/app/hello", {}, JSON.stringify({'name':'test3'}))
 ![Screenshot-5](img/screenshot_05.png)
 
 
+---
+
+
+
+
+
+![Screenshot-6](img/screenshot_06.png)
+`ws://localhost:8080/websocket/connect/037/jk4novye/websocket?authentication=a967fd87-c18d-4f67-bebd-d7ace329afb9`
+```text
+["SEND\ndestination:/app/hello\n\n{\"name\":\"Test Message 1\"}\u0000"]
+```
+![Screenshot-7](img/screenshot_07.png)
+
+
+
+
 
