@@ -26,9 +26,9 @@ WebSocket Token-Based Authentication
 Теперь клиент прошел аутентификацию, и теперь может осуществляться двунаправленная связь.
 
 * http://localhost:8080
-  ![Screenshot-01](img/screenshot_01.png)
-  ![Screenshot-02](img/screenshot_02.png)
-  ![Screenshot-03](img/screenshot_03.png)
+  ![Screenshot-1](img/screenshot_01.png)
+  ![Screenshot-2](img/screenshot_02.png)
+  ![Screenshot-3](img/screenshot_03.png)
 
 ---
 
@@ -46,4 +46,15 @@ WebSocket Token-Based Authentication
    Когда мы создаем соединение, интерфейс должен отправить токен на сервер.
   Теперь мы отправили токен на серверную часть, но как серверная часть принимает и обрабатывает токен для получения данных аутентификации? 
   Эта ссылка только что решила мою проблему: [Spring 4.x token-based WebSocket SockJS fallback authentication](http://stackoverflow.com/questions/39422053/spring-4-x-token-based-websocket-sockjs-fallback-authentication)
+
+
+---
+
+![Screenshot-4](img/screenshot_04.png)
+```shell
+stompClient.send("/app/hello", {}, JSON.stringify({'name':'test3'}))
+```
+![Screenshot-5](img/screenshot_05.png)
+
+
 
