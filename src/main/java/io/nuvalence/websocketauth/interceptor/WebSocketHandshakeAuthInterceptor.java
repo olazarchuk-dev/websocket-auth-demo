@@ -1,4 +1,4 @@
-package io.nuvalence.websocketauth.authentication;
+package io.nuvalence.websocketauth.interceptor;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.ServerHttpRequest;

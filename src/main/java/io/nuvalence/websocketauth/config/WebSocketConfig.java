@@ -1,6 +1,6 @@
 package io.nuvalence.websocketauth.config;
 
-import io.nuvalence.websocketauth.authentication.WebSocketHandshakeAuthInterceptor;
+import io.nuvalence.websocketauth.interceptor.WebSocketHandshakeAuthInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
