@@ -1,18 +1,13 @@
 package io.nuvalence.websocketauth.models;
 
-import java.util.UUID;
-
 public class WebSocketAuthInfo {
-    UUID authToken;
+    String authToken;
 
-    public WebSocketAuthInfo() {
-    }
-
-    public WebSocketAuthInfo(UUID authToken) {
+    public WebSocketAuthInfo(String authToken) {
         this.authToken = authToken;
     }
 
-    public UUID getAuthToken() {
+    public String getAuthToken() {
         return authToken;
     }
 }

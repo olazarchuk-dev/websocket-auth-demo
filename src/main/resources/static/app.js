@@ -11,15 +11,15 @@ function setConnected(connected) {
     $("#greetings").html("");
 }
 
-function connect() {
-    $.ajax({
-        url: '/authentication/token',
-        headers: {"Authorization": "SuperSecureToken"},
-        success: function (result) {
-            webSocketConnect(result)
-        }
-    })
-}
+// function connect() {
+//     $.ajax({
+//         url: '/authentication/token',
+//         headers: {"Authorization": "SuperSecureToken"},
+//         success: function (result) {
+//             webSocketConnect(result)
+//         }
+//     })
+// }
 
 function webSocketConnect(authToken) {
     console.log("Auth Token: " + authToken);
@@ -55,7 +55,8 @@ $(function () {
         e.preventDefault();
     });
     $("#connect").click(function () {
-        connect();
+//        connect();
+        webSocketConnect("1dfa537f-d46f-451e-9daa-ce26a58c6583");
     });
     $("#disconnect").click(function () {
         disconnect();
