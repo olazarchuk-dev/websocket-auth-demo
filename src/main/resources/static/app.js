@@ -25,11 +25,13 @@ function webSocketConnect(authToken) {
     console.log("Auth Token: " + authToken);
     var socket = new SockJS('/websocket/connect?authentication=' + authToken);
     stompClient = Stomp.over(socket);
-    stompClient.connect({}, function (frame) {
+//    stompClient.connect({}, function (frame) {
+    stompClient.connect({}, function () {
         setConnected(true);
-        console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/greetings', function (greeting) {
-            showGreeting(JSON.parse(greeting.body).content);
+//        console.log('Connected: ' + frame);
+//        stompClient.subscribe('/topic/greetings', function (greeting) {
+        stompClient.subscribe('/topic/greetings', function () {
+//            showGreeting(JSON.parse(greeting.body).content);
         });
     });
 }
@@ -46,9 +48,9 @@ function sendName() {
     stompClient.send("/app/hello", {}, JSON.stringify({'name': $("#name").val()}));
 }
 
-function showGreeting(message) {
-    $("#greetings").append("<tr><td>" + message + "</td></tr>");
-}
+// function showGreeting(message) {
+//     $("#greetings").append("<tr><td>" + message + "</td></tr>");
+// }
 
 $(function () {
     $("form").on('submit', function (e) {
