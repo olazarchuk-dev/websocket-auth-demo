@@ -52,6 +52,16 @@ WebSocket Token-Based Authentication
 ![Screenshot-9](img/screenshot_09.png)
 
 
+---
 
-
++ `For test purpose (and simplicity) i disabled CSRF, but you should re-enable this and provide a CRSF endpoint`: https://www.desarrollo-web-br-bd.com/es/spring-boot/como-asegurar-la-aplicacion-websocket-spring-boot-stomp/837744296/
++ `MissingCsrfTokenException: Could not verify the provided CSRF token because your session was not found`: https://stackoverflow.com/questions/50064893/missingcsrftokenexception-could-not-verify-the-provided-csrf-token-because-your
+- ( `Intro to Spring Security Expressions`: https://www.baeldung.com/spring-security-expressions )
+- ( `Spring Websocket Security throwing AccessDeniedException`: https://coderoad.ru/41924104/Spring-Websocket-Security-throwing-AccessDeniedException )
+- ( `Authorization : Bearer access_token`: https://stackoverflow.com/questions/41924104/spring-websocket-security-throwing-accessdeniedexception )
+- ( `registry.addEndpoint("/socketendpoint").setAllowedOrigins("*").setAllowedOrigins().withSockJS();`: https://stackoverflow.com/questions/65129358/how-to-handle-cors-origins-with-stomp-and-sockjs-in-spring-5-3-and-newer )
+- https://github.com/spring-projects/spring-security/issues/4469
+- ( `Unicode Character 'NULL' (U+0000)`: https://www.fileformat.info/info/unicode/char/0000/index.htm )
+- ( `Escape Sequence Description`: https://stackoverflow.com/questions/19008970/java-what-does-n-mean )
+- https://coderanch.com/t/197662/certification
 
