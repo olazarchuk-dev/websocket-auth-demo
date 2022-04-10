@@ -1,5 +1,6 @@
 package com.websocketauth.interceptor;
 
+import com.websocketauth.utils.TokenUtil;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
@@ -20,7 +21,7 @@ public class WebSocketHandshakeAuthInterceptor extends HttpSessionHandshakeInter
                                    Map<String, Object> attributes) {
         String authToken = getAuthToken(request);
 
-        if (!"1dfa537f-d46f-451e-9daa-ce26a58c6583".equals(authToken)) {
+        if (!TokenUtil.TOKEN.equals(authToken)) {
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             return false;
         }
