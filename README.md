@@ -45,9 +45,9 @@ WebSocket Token-Based Authentication
 ---
 
 ![Screenshot-8](img/screenshot_08.png)
-`ws://localhost:8080/websocket/connect/648/1umg3wo2/websocket?authToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAxMTIyNSIsInJvbGUiOiJBRE1JTklTVFJBVE9SIiwiaWF0IjoxNjQ4NDYwNDgyLCJleHAiOjE2NDg1MjA0ODJ9.aCHusaRO-uwnqd-o9uOdeCfjfoNgqdpg45NbfeAVVe6VZ0kNhNwWqoGjixGRrhxB42XeAd0UJKFj3EkED-fb9g`
+`ws://localhost:8080/websocket/connect/233/oal01u3a/websocket?authToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAxMTIyNSIsInJvbGUiOiJBRE1JTklTVFJBVE9SIiwiaWF0IjoxNjQ4NDYwNDgyLCJleHAiOjE2NDg1MjA0ODJ9.aCHusaRO-uwnqd-o9uOdeCfjfoNgqdpg45NbfeAVVe6VZ0kNhNwWqoGjixGRrhxB42XeAd0UJKFj3EkED-fb9g`
 ```text
-["SEND\ndestination:/api/hello\n\n{\"name\":\"Test Message 14\"}\u0000"]
+["SEND\ndestination:/api/greeting\n\n{\"name\":\"Test Message 15\"}\u0000"]
 ```
 ![Screenshot-9](img/screenshot_09.png)
 

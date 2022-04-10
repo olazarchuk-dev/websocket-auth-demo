@@ -1,12 +1,12 @@
 package com.websocketauth.models;
 
-public class HelloMessage {
+public class GreetingMessage {
     String name;
 
-    public HelloMessage() {
+    public GreetingMessage() {
     }
 
-    public HelloMessage(String name) {
+    public GreetingMessage(String name) {
         this.name = name;
     }
 
@@ -20,7 +20,7 @@ public class HelloMessage {
 
     @Override
     public String toString() {
-        return "HelloMessage{" +
+        return "GreetingMessage{" +
                 "name='" + name + '\'' +
                 '}';
     }

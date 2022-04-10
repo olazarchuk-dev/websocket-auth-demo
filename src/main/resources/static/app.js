@@ -17,7 +17,7 @@ function webSocketConnect(authToken) {
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function () {
         setConnected(true);
-        stompClient.subscribe('/topic/greetings', function () {
+        stompClient.subscribe('/messages/greeting', function () {
         });
     });
 }
@@ -31,7 +31,7 @@ function disconnect() {
 }
 
 function sendName() {
-    stompClient.send("/api/hello", {}, JSON.stringify({'name': $("#name").val()}));
+    stompClient.send("/api/greeting", {}, JSON.stringify({'name': $("#name").val()}));
 }
 
 $(function () {
