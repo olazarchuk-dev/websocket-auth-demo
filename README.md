@@ -23,12 +23,6 @@ WebSocket Token-Based Authentication
    Сервер проверяет кэш, чтобы убедиться, что внешний токен проверки подлинности действителен.
    Если он действителен, устанавливается рукопожатие и происходит обновление HTTP до протокола WebSocket.
 
-Теперь клиент прошел аутентификацию, и теперь может осуществляться двунаправленная связь.
-
-* http://localhost:8080
-  ![Screenshot-1](img/screenshot_01.png)
-  ![Screenshot-2](img/screenshot_02.png)
-  ![Screenshot-3](img/screenshot_03.png)
 
 ---
 
@@ -50,25 +44,12 @@ WebSocket Token-Based Authentication
 
 ---
 
-![Screenshot-4](img/screenshot_04.png)
-```shell
-stompClient.send("/app/hello", {}, JSON.stringify({'name':'test3'}))
-```
-![Screenshot-5](img/screenshot_05.png)
-
-
----
-
-
-
-
-
-![Screenshot-6](img/screenshot_06.png)
-`ws://localhost:8080/websocket/connect/037/jk4novye/websocket?authentication=a967fd87-c18d-4f67-bebd-d7ace329afb9`
+![Screenshot-8](img/screenshot_08.png)
+`ws://localhost:8080/websocket/connect/440/grka3ug0/websocket?authentication=1dfa537f-d46f-451e-9daa-ce26a58c6583`
 ```text
-["SEND\ndestination:/app/hello\n\n{\"name\":\"Test Message 1\"}\u0000"]
+["SEND\ndestination:/app/hello\n\n{\"name\":\"Test Message 13\"}\u0000"]
 ```
-![Screenshot-7](img/screenshot_07.png)
+![Screenshot-9](img/screenshot_09.png)
 
 
 
