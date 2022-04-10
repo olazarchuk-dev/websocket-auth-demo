@@ -33,7 +33,7 @@ public class WebSocketHandshakeAuthInterceptor extends HttpSessionHandshakeInter
         try {
             return fromHttpRequest(request)
                     .build()
-                    .getQueryParams().get("authentication").get(0);
+                    .getQueryParams().get("authToken").get(0);
         } catch (NullPointerException e) {
             return null;
         }

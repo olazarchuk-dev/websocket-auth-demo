@@ -13,7 +13,7 @@ function setConnected(connected) {
 
 function webSocketConnect(authToken) {
     console.log("Auth Token: " + authToken);
-    var socket = new SockJS('/websocket/connect?authentication=' + authToken);
+    var socket = new SockJS('/websocket/connect?authToken=' + authToken);
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function () {
         setConnected(true);
