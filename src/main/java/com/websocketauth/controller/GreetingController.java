@@ -1,7 +1,7 @@
-package io.nuvalence.websocketauth.controllers;
+package com.websocketauth.controller;
 
-import io.nuvalence.websocketauth.models.Greeting;
-import io.nuvalence.websocketauth.models.HelloMessage;
+import com.websocketauth.models.Greeting;
+import com.websocketauth.models.HelloMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;

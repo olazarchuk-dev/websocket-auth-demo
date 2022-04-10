@@ -1,4 +1,4 @@
-package io.nuvalence.websocketauth.interceptor;
+package com.websocketauth.interceptor;
 
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 

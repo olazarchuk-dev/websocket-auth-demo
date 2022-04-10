@@ -1,4 +1,4 @@
-package io.nuvalence.websocketauth.models;
+package com.websocketauth.models;
 
 public class WebSocketAuthInfo {
     String authToken;

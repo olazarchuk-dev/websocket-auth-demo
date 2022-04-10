@@ -1,6 +1,6 @@
-package io.nuvalence.websocketauth.controllers;
+package com.websocketauth.controller;
 
-import io.nuvalence.websocketauth.models.WebSocketAuthInfo;
+import com.websocketauth.models.WebSocketAuthInfo;
 import org.springframework.http.HttpStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

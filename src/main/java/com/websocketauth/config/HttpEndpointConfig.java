@@ -1,6 +1,6 @@
-package io.nuvalence.websocketauth.config;
+package com.websocketauth.config;
 
-import io.nuvalence.websocketauth.interceptor.HttpAuthenticationInterceptor;
+import com.websocketauth.interceptor.HttpAuthenticationInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
