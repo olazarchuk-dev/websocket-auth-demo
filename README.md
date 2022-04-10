@@ -45,9 +45,9 @@ WebSocket Token-Based Authentication
 ---
 
 ![Screenshot-8](img/screenshot_08.png)
-`ws://localhost:8080/websocket/connect/440/grka3ug0/websocket?authentication=1dfa537f-d46f-451e-9daa-ce26a58c6583`
+`ws://localhost:8080/websocket/connect/763/lefgv5gx/websocket?authentication=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAxMTIyNSIsInJvbGUiOiJBRE1JTklTVFJBVE9SIiwiaWF0IjoxNjQ4NDYwNDgyLCJleHAiOjE2NDg1MjA0ODJ9.aCHusaRO-uwnqd-o9uOdeCfjfoNgqdpg45NbfeAVVe6VZ0kNhNwWqoGjixGRrhxB42XeAd0UJKFj3EkED-fb9g`
 ```text
-["SEND\ndestination:/app/hello\n\n{\"name\":\"Test Message 13\"}\u0000"]
+["SEND\ndestination:/api/hello\n\n{\"name\":\"Test Message 14\"}\u0000"]
 ```
 ![Screenshot-9](img/screenshot_09.png)
 

@@ -31,7 +31,7 @@ function disconnect() {
 }
 
 function sendName() {
-    stompClient.send("/app/hello", {}, JSON.stringify({'name': $("#name").val()}));
+    stompClient.send("/api/hello", {}, JSON.stringify({'name': $("#name").val()}));
 }
 
 $(function () {
@@ -39,7 +39,7 @@ $(function () {
         e.preventDefault();
     });
     $("#connect").click(function () {
-        webSocketConnect("1dfa537f-d46f-451e-9daa-ce26a58c6583");
+        webSocketConnect("eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAxMTIyNSIsInJvbGUiOiJBRE1JTklTVFJBVE9SIiwiaWF0IjoxNjQ4NDYwNDgyLCJleHAiOjE2NDg1MjA0ODJ9.aCHusaRO-uwnqd-o9uOdeCfjfoNgqdpg45NbfeAVVe6VZ0kNhNwWqoGjixGRrhxB42XeAd0UJKFj3EkED-fb9g");
     });
     $("#disconnect").click(function () {
         disconnect();
